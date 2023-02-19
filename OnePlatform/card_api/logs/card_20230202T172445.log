@@ -1,0 +1,8 @@
+2023-02-02 17:24:45 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.natwest.controller.CardControllerTest]: CardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-02-02 17:24:45 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.natwest.CardApiApplication for test class com.natwest.controller.CardControllerTest
+2023-02-02 17:24:46 [main] INFO  c.n.controller.CardControllerTest - Starting CardControllerTest using Java 17.0.4.1 with PID 11548 (started by RBS in C:\Jeeva1\Capstone Project\OnePlatform\card_api)
+2023-02-02 17:24:46 [main] INFO  c.n.controller.CardControllerTest - No active profile set, falling back to 1 default profile: "default"
+2023-02-02 17:24:49 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2023-02-02 17:24:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2023-02-02 17:24:49 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2023-02-02 17:24:49 [main] INFO  c.n.controller.CardControllerTest - Started CardControllerTest in 3.162 seconds (process running for 4.747)

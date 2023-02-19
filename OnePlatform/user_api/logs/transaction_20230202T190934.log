@@ -1,0 +1,8 @@
+2023-02-02 19:09:34 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.natwest.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-02-02 19:09:34 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.natwest.UserApiApplication for test class com.natwest.controller.UserControllerTest
+2023-02-02 19:09:35 [main] INFO  c.n.controller.UserControllerTest - Starting UserControllerTest using Java 17.0.4.1 with PID 20416 (started by RBS in C:\Jeeva1\Capstone Project\OnePlatform\user_api)
+2023-02-02 19:09:35 [main] INFO  c.n.controller.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2023-02-02 19:09:39 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2023-02-02 19:09:39 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2023-02-02 19:09:39 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2023-02-02 19:09:39 [main] INFO  c.n.controller.UserControllerTest - Started UserControllerTest in 3.951 seconds (process running for 5.977)

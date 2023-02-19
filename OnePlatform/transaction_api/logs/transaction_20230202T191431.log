@@ -1,0 +1,8 @@
+2023-02-02 19:14:32 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.natwest.controller.TransactionControllerTest]: TransactionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-02-02 19:14:32 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.natwest.TransactionApiApplication for test class com.natwest.controller.TransactionControllerTest
+2023-02-02 19:14:33 [main] INFO  c.n.c.TransactionControllerTest - Starting TransactionControllerTest using Java 17.0.4.1 with PID 21176 (started by RBS in C:\Jeeva1\Capstone Project\OnePlatform\transaction_api)
+2023-02-02 19:14:33 [main] INFO  c.n.c.TransactionControllerTest - No active profile set, falling back to 1 default profile: "default"
+2023-02-02 19:14:36 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2023-02-02 19:14:36 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2023-02-02 19:14:36 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2023-02-02 19:14:36 [main] INFO  c.n.c.TransactionControllerTest - Started TransactionControllerTest in 4.034 seconds (process running for 6.044)

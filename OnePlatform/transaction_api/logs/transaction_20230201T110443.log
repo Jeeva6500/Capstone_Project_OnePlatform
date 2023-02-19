@@ -1,0 +1,253 @@
+2023-02-01 11:04:44 [restartedMain] INFO  c.natwest.TransactionApiApplication - Starting TransactionApiApplication using Java 17.0.4.1 with PID 19868 (C:\Jeeva1\Capstone Project\OnePlatform\transaction_api\target\classes started by RBS in C:\Jeeva1\Capstone Project\OnePlatform\transaction_api)
+2023-02-01 11:04:44 [restartedMain] INFO  c.natwest.TransactionApiApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-01 11:04:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-01 11:04:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-01 11:04:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-01 11:04:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156 ms. Found 1 JPA repository interfaces.
+2023-02-01 11:04:46 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=377d4134-34bd-3c22-b4a1-e2ad81f86238
+2023-02-01 11:04:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2023-02-01 11:04:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2023-02-01 11:04:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-01 11:04:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-01 11:04:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-01 11:04:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2462 ms
+2023-02-01 11:04:47 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-01 11:04:47 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-01 11:04:47 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-01 11:04:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-02-01 11:04:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39a8cb9d
+2023-02-01 11:04:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-02-01 11:04:48 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-01 11:04:49 [restartedMain] INFO  o.h.c.b.TypeSafeActivator - Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
+jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+	at jakarta.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291)
+	at jakarta.validation.Validation.buildDefaultValidatorFactory(Validation.java:103)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.getValidatorFactory(TypeSafeActivator.java:479)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.activate(TypeSafeActivator.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hibernate.cfg.beanvalidation.BeanValidationIntegrator.integrate(BeanValidationIntegrator.java:137)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:287)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:415)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1425)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.natwest.TransactionApiApplication.main(TransactionApiApplication.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2023-02-01 11:04:49 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-01 11:04:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-01 11:04:51 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-01 11:04:52 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2023-02-01 11:04:52 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-02-01 11:04:52 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-02-01 11:04:52 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-02-01 11:04:52 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-02-01 11:04:52 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:04:52 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-02-01 11:04:52 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-02-01 11:04:52 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-02-01 11:04:52 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-02-01 11:04:52 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-02-01 11:04:52 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-02-01 11:04:52 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-02-01 11:04:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-02-01 11:04:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-02-01 11:04:53 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-01 11:04:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1675229693297 with initial instances count: 5
+2023-02-01 11:04:53 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application TRANSACTION-API with eureka with status UP
+2023-02-01 11:04:53 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1675229693300, current=UP, previous=STARTING]
+2023-02-01 11:04:53 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_TRANSACTION-API/LAPTOP-8U8N5CC9:transaction-api:8085: registering service...
+2023-02-01 11:04:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2023-02-01 11:04:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2023-02-01 11:04:53 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+2023-02-01 11:04:53 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_TRANSACTION-API/LAPTOP-8U8N5CC9:transaction-api:8085 - registration status: 204
+2023-02-01 11:04:53 [restartedMain] INFO  c.natwest.TransactionApiApplication - Started TransactionApiApplication in 9.252 seconds (process running for 10.418)
+2023-02-01 11:05:14 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-01 11:05:14 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-01 11:05:14 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-02-01 11:05:14 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Method name: com.natwest.controller.TransactionController
+2023-02-01 11:05:14 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Method arguments:[Ljava.lang.Object;@44930b43
+2023-02-01 11:05:14 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - **************Around advice called***********************
+2023-02-01 11:05:14 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 11:05:14 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Method name executed: com.natwest.controller.TransactionControlleraddTrans
+2023-02-01 11:05:15 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 11:05:15 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Method arguments are: [Transaction [transactionId=1, transactionType=Debit, transactionAmount=500.0, transactionDate=2023-02-01T11:05:14.580799, transactionDesc=Bill payment, cardNo=852852852852]]
+2023-02-01 11:05:15 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Output:<201 CREATED Created,Transaction [transactionId=1, transactionType=Debit, transactionAmount=500.0, transactionDate=2023-02-01T11:05:14.580799, transactionDesc=Bill payment, cardNo=852852852852],[]>
+2023-02-01 11:09:52 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:14:52 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:19:52 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:24:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:29:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:34:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:39:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:44:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:49:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:54:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 11:59:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:04:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:09:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:14:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:19:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:24:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:29:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:34:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:39:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:44:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:49:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:54:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 12:59:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:04:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:09:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:14:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:19:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:24:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:29:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:34:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:39:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:44:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:49:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:54:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 13:59:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 14:04:53 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 14:46:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m44s14ms573µs400ns).
+2023-02-01 14:49:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 14:54:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 14:59:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:04:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:09:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:14:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:19:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:24:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:29:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:34:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:39:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:44:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:49:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:54:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 15:59:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:04:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:09:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:14:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:19:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:24:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:29:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:34:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:39:47 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:41:14 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Method name: com.natwest.controller.TransactionController
+2023-02-01 16:41:14 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Method arguments:[Ljava.lang.Object;@12dc95f5
+2023-02-01 16:41:14 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - **************Around advice called***********************
+2023-02-01 16:41:15 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 16:41:15 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Method name executed: com.natwest.controller.TransactionControlleraddTrans
+2023-02-01 16:41:20 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 16:41:20 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Method arguments are: [Transaction [transactionId=2, transactionType=Debit, transactionAmount=500.0, transactionDate=2023-02-01T16:41:15.098812800, transactionDesc=Bill payment, cardNo=876152634152]]
+2023-02-01 16:41:20 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Output:<201 CREATED Created,Transaction [transactionId=2, transactionType=Debit, transactionAmount=500.0, transactionDate=2023-02-01T16:41:15.098812800, transactionDesc=Bill payment, cardNo=876152634152],[]>
+2023-02-01 16:44:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:49:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:54:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 16:59:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:04:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:09:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:14:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:19:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:24:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:29:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:33:22 [http-nio-8085-exec-10] INFO  com.natwest.aspect.LoggerAspect - Method name: com.natwest.controller.TransactionController
+2023-02-01 17:33:22 [http-nio-8085-exec-10] INFO  com.natwest.aspect.LoggerAspect - Method arguments:[Ljava.lang.Object;@1b6c6cf1
+2023-02-01 17:33:22 [http-nio-8085-exec-10] INFO  com.natwest.aspect.LoggerAspect - **************Around advice called***********************
+2023-02-01 17:33:22 [http-nio-8085-exec-10] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 17:33:22 [http-nio-8085-exec-10] INFO  com.natwest.aspect.LoggerAspect - Method name executed: com.natwest.controller.TransactionControlleraddTrans
+2023-02-01 17:33:25 [http-nio-8085-exec-10] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 17:33:25 [http-nio-8085-exec-10] INFO  com.natwest.aspect.LoggerAspect - Method arguments are: [Transaction [transactionId=3, transactionType=Debit, transactionAmount=200.0, transactionDate=2023-02-01T17:33:22.857778, transactionDesc=Cinema, cardNo=876152634152]]
+2023-02-01 17:33:25 [http-nio-8085-exec-10] INFO  com.natwest.aspect.LoggerAspect - Output:<201 CREATED Created,Transaction [transactionId=3, transactionType=Debit, transactionAmount=200.0, transactionDate=2023-02-01T17:33:22.857778, transactionDesc=Cinema, cardNo=876152634152],[]>
+2023-02-01 17:33:26 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Method name: com.natwest.controller.TransactionController
+2023-02-01 17:33:26 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Method arguments:[Ljava.lang.Object;@6b3385c
+2023-02-01 17:33:26 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - **************Around advice called***********************
+2023-02-01 17:33:26 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 17:33:26 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Method name executed: com.natwest.controller.TransactionControlleraddTrans
+2023-02-01 17:33:27 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 17:33:27 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Method arguments are: [Transaction [transactionId=4, transactionType=Debit, transactionAmount=200.0, transactionDate=2023-02-01T17:33:26.380629600, transactionDesc=Cinema, cardNo=876152634152]]
+2023-02-01 17:33:27 [http-nio-8085-exec-1] INFO  com.natwest.aspect.LoggerAspect - Output:<201 CREATED Created,Transaction [transactionId=4, transactionType=Debit, transactionAmount=200.0, transactionDate=2023-02-01T17:33:26.380629600, transactionDesc=Cinema, cardNo=876152634152],[]>
+2023-02-01 17:33:39 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Method name: com.natwest.controller.TransactionController
+2023-02-01 17:33:39 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Method arguments:[Ljava.lang.Object;@7ae2ca05
+2023-02-01 17:33:39 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - **************Around advice called***********************
+2023-02-01 17:33:39 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 17:33:39 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Method name executed: com.natwest.controller.TransactionControlleraddTrans
+2023-02-01 17:33:39 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 17:33:39 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Method arguments are: [Transaction [transactionId=5, transactionType=Debit, transactionAmount=500.0, transactionDate=2023-02-01T17:33:39.343882, transactionDesc=Cinema, cardNo=876152634152]]
+2023-02-01 17:33:39 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Output:<201 CREATED Created,Transaction [transactionId=5, transactionType=Debit, transactionAmount=500.0, transactionDate=2023-02-01T17:33:39.343882, transactionDesc=Cinema, cardNo=876152634152],[]>
+2023-02-01 17:34:09 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Method name: com.natwest.controller.TransactionController
+2023-02-01 17:34:09 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Method arguments:[Ljava.lang.Object;@1f349372
+2023-02-01 17:34:09 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - **************Around advice called***********************
+2023-02-01 17:34:09 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 17:34:09 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Method name executed: com.natwest.controller.TransactionControlleraddTrans
+2023-02-01 17:34:09 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 17:34:09 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Method arguments are: [Transaction [transactionId=6, transactionType=Debit, transactionAmount=200.0, transactionDate=2023-02-01T17:34:09.502364100, transactionDesc=Medicine, cardNo=876152634152]]
+2023-02-01 17:34:09 [http-nio-8085-exec-8] INFO  com.natwest.aspect.LoggerAspect - Output:<201 CREATED Created,Transaction [transactionId=6, transactionType=Debit, transactionAmount=200.0, transactionDate=2023-02-01T17:34:09.502364100, transactionDesc=Medicine, cardNo=876152634152],[]>
+2023-02-01 17:34:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:39:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:44:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:49:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:54:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 17:59:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:04:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:09:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:14:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:16:43 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Method name: com.natwest.controller.TransactionController
+2023-02-01 18:16:43 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Method arguments:[Ljava.lang.Object;@45eb238b
+2023-02-01 18:16:43 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - **************Around advice called***********************
+2023-02-01 18:16:43 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 18:16:43 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Method name executed: com.natwest.controller.TransactionControlleraddTrans
+2023-02-01 18:17:21 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 18:17:21 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Method arguments are: [Transaction [transactionId=7, transactionType=Debit, transactionAmount=100.0, transactionDate=2023-02-01T18:16:43.932881800, transactionDesc=Medicine, cardNo=876152634152]]
+2023-02-01 18:17:23 [http-nio-8085-exec-2] INFO  com.natwest.aspect.LoggerAspect - Output:<201 CREATED Created,Transaction [transactionId=7, transactionType=Debit, transactionAmount=100.0, transactionDate=2023-02-01T18:16:43.932881800, transactionDesc=Medicine, cardNo=876152634152],[]>
+2023-02-01 18:18:06 [http-nio-8085-exec-4] INFO  com.natwest.aspect.LoggerAspect - Method name: com.natwest.controller.TransactionController
+2023-02-01 18:18:06 [http-nio-8085-exec-4] INFO  com.natwest.aspect.LoggerAspect - Method arguments:[Ljava.lang.Object;@1c12bd7f
+2023-02-01 18:18:06 [http-nio-8085-exec-4] INFO  com.natwest.aspect.LoggerAspect - **************Around advice called***********************
+2023-02-01 18:18:06 [http-nio-8085-exec-4] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 18:18:06 [http-nio-8085-exec-4] INFO  com.natwest.aspect.LoggerAspect - Method name executed: com.natwest.controller.TransactionControlleraddTrans
+2023-02-01 18:18:34 [http-nio-8085-exec-4] INFO  com.natwest.aspect.LoggerAspect - ***************
+2023-02-01 18:18:34 [http-nio-8085-exec-4] INFO  com.natwest.aspect.LoggerAspect - Method arguments are: [Transaction [transactionId=8, transactionType=Debit, transactionAmount=500.0, transactionDate=2023-02-01T18:18:21.357070600, transactionDesc=Medicine, cardNo=876152634152]]
+2023-02-01 18:18:34 [http-nio-8085-exec-4] INFO  com.natwest.aspect.LoggerAspect - Output:<201 CREATED Created,Transaction [transactionId=8, transactionType=Debit, transactionAmount=500.0, transactionDate=2023-02-01T18:18:21.357070600, transactionDesc=Medicine, cardNo=876152634152],[]>
+2023-02-01 18:19:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:24:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:29:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:34:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:39:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:44:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:49:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:54:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 18:59:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 19:04:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 19:09:48 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 19:14:49 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 19:19:49 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 19:24:49 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 19:29:49 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-01 20:58:41 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m25s735ms15µs200ns).
+2023-02-01 20:58:44 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
